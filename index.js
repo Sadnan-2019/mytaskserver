@@ -21,8 +21,8 @@ async function run(){
 
      try{
 
-          await client.connect();
-          const todoCollection = client.db("mytask").collection("todo");
+      await client.connect();
+      const todoCollection = client.db("mytask").collection("todo");
           // console.log("lmmf,",todoCollection)
      }
 
