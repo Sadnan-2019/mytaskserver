@@ -3,7 +3,7 @@ const cors = require("cors");
 const { MongoClient, ServerApiVersion } = require('mongodb');
 const app = express();
 const port = process.env.PORT || 5000;
-
+require("dotenv").config();
 /// use middleware
 
 app.use(cors());
@@ -23,7 +23,7 @@ async function run(){
 
           await client.connect();
           const todoCollection = client.db("mytask").collection("todo");
-          console.log("lmmf,",todoCollection)
+          // console.log("lmmf,",todoCollection)
      }
 
      finally{
